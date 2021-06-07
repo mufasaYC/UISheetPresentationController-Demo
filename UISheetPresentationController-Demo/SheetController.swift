@@ -42,7 +42,7 @@ final class SheetTransitioningDelegate: NSObject, UIViewControllerTransitioningD
 	) -> UIPresentationController? {
 		let controller = UISheetPresentationController(presentedViewController: presented, presenting: presenting)
 		controller.prefersScrollingExpandsWhenScrolledToEdge = true
-		controller.detents = [.medium()]
+		controller.detents = [.large(), .medium()]
 		controller.prefersGrabberVisible = true
 		return controller
 	}
